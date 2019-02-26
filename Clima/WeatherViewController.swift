@@ -21,8 +21,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     let GOOGLE_IMAGE_URL = "https://maps.googleapis.com/maps/api/place/photo"
 
     
-    // moeten nog worden verplaatst naar plist
- 
+   
+    //DONE: Verplaats keys naar plist file
     let APP_ID = valueForAPIKey(named:"APP_ID")
     let GOOGLE_API_KEY = valueForAPIKey(named: "GOOGLE_API_KEY")
     
@@ -30,7 +30,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     public var cityGoogleMaps : String = ""
     public var photoReference : String = ""
     
-    //TODO: Declare instance variables here
+    //DONE: Declare instance variables here
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
     let googleDataModel = GoogleDataModel()
